@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Diabetes</title>
+</head>
+<style>
+    body
+    {
+      background-color: lightcoral;
+    }</style>
+
+<body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Disease Predictor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarsExample02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  </div>
+        </nav>
+        <h1 align='center'>Heart </h1>
+        <div class="container",class="form-group">
+            <h2>Details Heart: </h2>
+        <h2>Welcome</h2>
+        <h3>Enter the Following parameters :</h3>
+      <form action="\Heart" method="POST">
+        <label for="Age">Age : </label>
+        <input type="text" id="Age" name="age" required="required">
+        <br>
+    
+        <label for="trestbps">Trestbps : </label>
+        <input type="text" id="trestbps" name="trestbps" required="required">
+        <br>
+    
+        <label for="Cholestrol">Cholestrol : </label>
+        <input type="text" id="cholestrol" name="cholestrol" required="required">
+        <br>
+
+    
+        <label for="MaxHeartRate">thalach : </label>
+        <input type="text" id="MaxHeartRate" name="thalach" required="required">
+        <br>
+    
+        <label for="St_Depression">Oldpeak : </label>
+        <input type="text" id="St_Depression" name="Oldpeak" required="required">
+        <br>
+    
+        <label for="Ca">Ca(number of major vessels) : </label>
+        <input type="text" id="Ca" name="ca" required="required">
+        <br>
+
+        <label for="Sex">Sex : </label>
+        <select name="Sex" id="Sex" required="required">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <br>
+
+        <label for="Chest_Pain">Chest Pain Type: </label>
+        <select name="cp" id="cp" required="required">
+          <option value="typical_angina">Typical Angina</option>
+          <option value="atypical_angina">atypical_angina</option>
+          <option value="non_anginal_pain">Non Anginal Pain</option>
+          <option value="asymptomatic">Asymptomatic</option>
+        </select>
+        <br>
+
+        <label for="Fasting Blood Sugar">Fasting Blood Sugar : </label>
+        <select name="fbs" id="fbs" required="required">
+          <option value="greater_than_120"> > 120 mg/dl</option>
+          <option value="lower_than_120"> < 120mg/dl</option>
+        </select>
+        <br>
+
+        <label for="restecg">Restecg</label>
+        <select name="restecg" id="restecg" required="required">
+          <option value="Normal">Normal</option>
+          <option value="ST-T wave abnormality">ST-T wave abnormality</option>
+          <option value="Left Ventricular Hypertrophy">Left Ventricular Hypertrophy</option>
+        </select>
+        <br>
+
+        <label for="Exang">Exang</label>
+        <select name="exang" id="exang" required="required">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <br>
+
+        <label for="Slope">Slope</label>
+        <select name="slope" id="slope" required="required">
+          <option value="upsloping">upsloping</option>
+          <option value="flat">flat</option>
+          <option value="downsloping">downsloping</option>
+        </select>
+        <br>
+
+        <label for="thal">Thal</label>
+        <select name="thal" id="thal" required="required">
+          <option value="Fixed_Defect">Fixed Defect</option>
+          <option value="Normal">Normal</option>
+          <option value="Reversible Defect">Reversable Defect</option>
+        </select>
+        <br>
+
+    
+        <input type="submit" value="Submit"><br><br>
+    </form>
+        <br>
+        <br>
+        <h3 align='center'>{{ prediction_text }}</h3>
+    
+        </div>
+    
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Breast Cancer</title>
+</head>
+<style>
+  body{
+    background-color: lightpink;
+  }
+</style>
+<body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Health Care</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarsExample02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  </div>
+        </nav>
+        <h1 align="center">Breast Cancer</h1>
+        <div class="container",class="form-group">
+                <h2>Details Breast Cancer: </h2>
+            <h2>Welcome</h2>
+            <h3>Enter the Following parameters :</h3>
+          <form action="\Breast_cancer" method="POST">
+            <label for="Mean Radius">Mean Radius :</label>
+            <input type="text" id="mean_radius" name="mean_radius" required="required">
+            <br>
+        
+            <label for="Mean Texture">Mean Texture :</label>
+            <input type="text" id="mean_texture" name="mean_texture" required="required">
+            <br>
+        
+            <label for="Mean Perimeter">Mean Perimeter :</label>
+            <input type="text" id="mean_perimeter" name="mean_perimeter" required="required">
+            <br>
+        
+            <label for="Mean Area">Mean Area :</label>
+            <input type="text" id="mean_area" name="mean_area" required="required">
+            <br>
+        
+            <label for="Mean Smoothness">Mean Smoothness : </label>
+            <input type="text" id="mean_smoothness" name="mean_smoothness" required="required">
+            <br>
+        
+            <input type="submit" value="Submit"><br><br>
+        </form>
+            <br>
+            <br>
+            <h3>{{ prediction_text }}</h3>
+        
+            </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        
+</body>
+</html>
